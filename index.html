@@ -7215,7 +7215,7 @@ const HALL_STORES = {
 const ACE_CODES = Object.keys(HALL_STORES);
 const isAce = c => !!HALL_STORES[String(c || '').toUpperCase()];
 /* v2.9: the stores are listed but not open yet ("coming soon"): the machines (slot, pachinko) come in the next version. Switch to true when they are ready. */
-let ACE_OPEN = false;                                                                       /* (the tests open them with __DFG.setAceOpen) */
+let ACE_OPEN = true;                                                                       /* (the tests open them with __DFG.setAceOpen) */
 const setAceOpen = v => { ACE_OPEN = !!v; };
 /* the machines of a store: slots are numbered 101..., pachinko machines 201... */
 const _hmCache = {};
